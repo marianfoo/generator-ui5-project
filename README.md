@@ -245,13 +245,12 @@ You need to add an `npm script` to trigger this generator from the "npm scripts"
 
 > Note that the generator will be called from the project root, which means all files will be generated here then. This might not be ideal in your situation, but you can always open another project in VS Code and add an npm script that calls this generator from there as well. Be aware that you need to change the path of the generator then.
 
-Once the npm script is set up, you need to set a breakpoint in the logic of the generator itself (here in the index.js). Once all (conditional) breakpoints are set, hit the debug button of the npm script that you want to trigger. 
+Once the npm script is set up, you need to set a breakpoint in the logic of the generator itself (here in the index.js). Once all (conditional) breakpoints are set, hit the debug button of the npm script that you want to trigger.
 ![debug](./docs/debugBreakpoint.png)
-Within a few seconds, you'll see that the generator is started, and the debugger will be attached and eventually stop at your breakpoint. 
+Within a few seconds, you'll see that the generator is started, and the debugger will be attached and eventually stop at your breakpoint.
 ![debug](./docs/debugStopped.png)
 
 Now you are ready to go, happy coding 🦁!
-
 
 ## Support
 
