@@ -1,12 +1,13 @@
 /**
  * eslint-disable @sap/ui5-jsdocs/no-jsdoc
  */
-sap.ui.define(
-    ["sap/ui/core/UIComponent", "<%=appURI%>/model/models"],
+ sap.ui.define(
+    ["sap/ui/core/UIComponent", "sap/ui/Device", "<%=appURI%>/model/models"],
     /**
      * @param {typeof sap.ui.core.UIComponent} UIComponent
+     * @param {typeof sap.ui.Device} Device
      */
-    function (UIComponent, models) {
+    function (UIComponent, Device, models) {
         "use strict";
 
         return UIComponent.extend("<%=appId%>.Component", {
