@@ -139,7 +139,7 @@ describe("Basic project capabilities", function () {
     ];
 
     testConfigurations.forEach((testConfig, index) => {
-        if (!IsCIRun) {
+        if (true) {
             createTest(testConfig);
             return;
         }
