@@ -160,7 +160,7 @@ module.exports = class extends Generator {
                 karma: "run-s clearCoverage karma-ci",
                 lint: "eslint ./**/webapp/**/*.js && prettier --check ./**/webapp/**/*.{js,xml}",
                 "lint-fix":
-                    "eslint ./**/webapp/**/*.js --fix && prettier --write ./**/webapp/**/*.{js,xml} --ignore-unknown"
+                    "eslint ./**/webapp/**/*.js --fix && prettier --write ./**/webapp/**/*.{js,xml} --no-error-on-unmatched-pattern"
             },
             devDependencies: {
                 shx: "^0.3.3",
@@ -172,8 +172,8 @@ module.exports = class extends Generator {
                 "karma-ui5": "^2.3.4",
                 "npm-run-all": "^4.1.5",
                 eslint: "^7.32.0",
-                prettier: "^2.5.1",
-                "@prettier/plugin-xml": "^1.1.0"
+                prettier: "^2.6.0",
+                "@prettier/plugin-xml": "^1.2.0"
             },
             ui5: {
                 dependencies: ["ui5-middleware-livereload"]
