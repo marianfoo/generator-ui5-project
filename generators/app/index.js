@@ -160,7 +160,7 @@ module.exports = class extends Generator {
                 karma: "run-s clearCoverage karma-ci",
                 lint: "eslint ./**/webapp/**/*.js && prettier --check ./**/webapp/**/*.{js,xml}",
                 "lint-fix":
-                    "eslint ./**/webapp/**/*.js --fix && prettier --write ./**/webapp/**/*.{js,xml} --no-error-on-unmatched-pattern"
+                    "eslint ./**/webapp/**/*.js --fix && prettier --write ./**/webapp/**/*.{js,xml} --ignore-unknown"
             },
             devDependencies: {
                 shx: "^0.3.3",
